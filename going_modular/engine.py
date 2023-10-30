@@ -43,7 +43,7 @@ def test_step(model: torch.nn.Module,
     """
     model.eval()
 
-    test_loss = 0.0, test_acc = 0.0
+    test_loss, test_acc = 0,0
 
     with torch.inference_mode():
         for batch, (X,y), in enumerate(dataloader):
