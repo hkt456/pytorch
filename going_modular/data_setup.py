@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 
 
 NUM_WORKERS = 2
-data_path = Path('data')
+data_path = Path('./data')
 image_path = data_path / "pizza_steak_sushi"
 
 def get_data():
