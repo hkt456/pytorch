@@ -13,7 +13,7 @@ def train_step(model: torch.nn.Module,
     """
     model.train()
 
-    train_loss = 0.0, train_acc = 0.0
+    train_loss, train_acc = 0,0
 
     for batch, (X,y), in enumerate(dataloader):
         X,y = X.to(device), y.to(device)
