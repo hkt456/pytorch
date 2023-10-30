@@ -7,7 +7,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
 
-NUM_WORKERS = 2
+NUM_WORKERS = 0
 data_path = Path('./data')
 image_path = data_path / "pizza_steak_sushi"
 

@@ -49,9 +49,9 @@ def test_step(model: torch.nn.Module,
         for batch, (X,y), in enumerate(dataloader):
             X,y = X.to(device), y.to(device)
 
-            y_pred_logits = model(X)
+            test_pred_logits = model(X)
 
-            loss = loss_fn(y_pred_logits, y)
+            loss = loss_fn(test_pred_logits, y)
             test_loss += loss.item()
 
             test_pred_labels = test_pred_logits.argmax(dim=1)
